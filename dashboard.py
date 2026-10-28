@@ -15,8 +15,7 @@ st.write("Explore IPL team performance and player statistics.")
 
 # Load datasets
 BASE_DIR = Path(__file__).resolve().parent
-DATA_DIR = BASE_DIR / "data"
-
+DATA_DIR = BASE_DIR
 @st.cache_data
 def load_data():
     matches = pd.read_csv(DATA_DIR / "matches.csv")
